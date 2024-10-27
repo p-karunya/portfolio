@@ -9,16 +9,18 @@
 
 body {
     text-align: center;
+    font-size: 32px;
     font-family: Jost;
     background-color: bisque;
     color: black;
 }
 
-.center_conatiner {
+.center_container {
     --size: 50vh;
     display: flex;
     justify-content: center; 
-    height: var(--size);           
+    height: var(--size); 
+    margin: 2vh;          
 }
 
 .img_circle {
@@ -26,6 +28,39 @@ body {
     width: 50vh;
     border: 0.5vh solid brown;
     border-radius: 50vh;
+    fill: var(--fill);
     object-fit: cover;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+@media (max-width: 768px) {
+    .grid_container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.grid_container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-radius: 1vh;
+    margin: 3vh;
+    background-color: brown;
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.grid_container a:hover {
+    background-color: palevioletred;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    text-decoration: none;
 }
 
