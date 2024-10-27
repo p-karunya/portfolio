@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost_font.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+
+
+body {
+    text-align: center;
+    font-family: Jost;
+    background-color: bisque;
+    color: black;
+}
+
+.center_conatiner {
+    --size: 50vh;
+    display: flex;
+    justify-content: center; 
+    height: var(--size);           
+}
+
+.img_circle {
+    height: 50vh;
+    width: 50vh;
+    border: 0.5vh solid brown;
+    border-radius: 50vh;
+    object-fit: cover;
+}
+
